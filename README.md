@@ -19,7 +19,7 @@ D - Dependancy Inversion Principle - Higher level classes should not directly us
 
 <b>Setup instructions</b><br>
 
-$ git clone https://github.com/skgchn/conways-game-of-life-oop-solid.git game-of-line<br>
+$ git clone https://github.com/skgchn/conways-game-of-life-oop-solid.git game-of-life<br>
 $ cd game-of-life<br>
 $ vagrant up<br>
 Because of an error during vagrant up, I did these steps as well<br>
