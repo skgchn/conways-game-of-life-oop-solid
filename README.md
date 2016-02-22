@@ -35,8 +35,7 @@ $ vagrant provision<br>
 <b>Running Conway's Game of Life from the command line</b><br>
 $ vagrant ssh<br>
 $ cd /var/www/gameoflife<br>
-$ php golcli.php<br>
-Usage: php golcli.php -r<num_rows> -c<num_cols> -n<num_steps> [-t<board_type>] [-i<board_initializer><br>
+$ php golcli.php<br>   # Shows command usage
 $ php golcli.php -r 3 -c 3 -n 1<br>
 
 
