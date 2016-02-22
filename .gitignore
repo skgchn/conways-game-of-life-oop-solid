@@ -1,0 +1,6 @@
+puphpet/config-custom.yaml
+.gitattributes.ignore
+.vagrant
+nbproject
+puphpet.zip
+puphpet/files/dot/ssh/id_rsa

@@ -188,6 +188,8 @@ apache:
     vhosts:
         av_bvwmkp4a0npi:
             servername: gameoflife.dev
+            serveraliases:
+                - www.gameoflife.dev
             docroot: /var/www/gameoflife
             port: '80'
             setenv:
