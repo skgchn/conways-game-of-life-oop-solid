@@ -1,4 +1,4 @@
-# Conway's Game of Life for demostrating Object Oriented Programming (OOP) in PHP with S.O.L.I.D. principles in mind (conways-game-of-life-oop-solid)
+# Conway's Game of Life to demonstrate Object Oriented Programming (OOP) in PHP with S.O.L.I.D. principles in mind (conways-game-of-life-oop-solid)
 S - Single Responsibility Principle - Build classes to do only one thing<br>
 O - Open/Close Principle - Open for extension, but closed for modification<br>
 L - Liskov's Substitution Principle - Specialized classes (sub-classes) can be used wherever generalized (parents) classes are being used<br>
