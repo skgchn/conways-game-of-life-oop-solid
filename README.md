@@ -8,7 +8,7 @@ D - Dependancy Inversion Principle - Higher level classes should not directly us
 <b>Yet to do</b><br>
 
 1. Implement run() method in HTMLGameController and ConsoleGameController to remove much code from index.php and golcli.php<br>
-2. Use a factory pattern to run both the web and console apps from same initial file gol.php, not requiring separate files for each, that not requiring index.php or golcli.php<br>
+2. Use a factory pattern to run both the web and console apps from same initial file gol.php, not requiring separate files for each, that is not requiring index.php or golcli.php<br>
 3. Add HTML, header, body tags, etc. in HTMLBoardRenderer...currently missing.<br>
 4. Move js and css into separate javascript and css files respectively.<br>
 5. May add GameAdvancerClass, to allow variation in game of life rules without violating Open/Close principle.<br>
