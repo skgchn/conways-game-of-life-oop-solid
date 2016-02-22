@@ -4,3 +4,4 @@ puphpet/config-custom.yaml
 nbproject
 puphpet.zip
 puphpet/files/dot/ssh/id_rsa
+gameoflife/data/gol.txt
