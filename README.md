@@ -16,6 +16,7 @@ D - Dependancy Inversion Principle - Higher level classes should not directly us
 7. Use gif images to show deaths and aging in each step. Survivors need to have grey hairs and not be jumping around.<br>
 8. Do class diagram and add jpg here.<br>
 9. Implement a class or a method so as to not access superglobal $_GET directly.<br>
+10. Unit tests!<br>
 
 <b>Setup instructions</b><br>
 
