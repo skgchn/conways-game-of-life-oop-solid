@@ -42,3 +42,18 @@ $ php golcli.php -r 3 -c 3 -n 1<br>
 
 <b>Running from web</b><br>
 Visit <b>gameofline.dev</b> or <b>www.gameoflife.dev</b> in your browser<br>
+
+<b>OOP Design Progression</b><br>
+1. Initial Thought<br>
+![alt tag](https://github.com/skgchn/conways-game-of-life-oop-solid/blob/master/classdiagrams/1.%20InitialThought.jpg)<br><br>
+2. After applying Single Responsiblity principle<br>
+![alt tag](https://github.com/skgchn/conways-game-of-life-oop-solid/blob/master/classdiagrams/2.%20AfterApplyingSingleResponsiblityPrinciple.jpg)<br><br>
+3. After adding the Game Controller<br>
+![alt tag](https://github.com/skgchn/conways-game-of-life-oop-solid/blob/master/classdiagrams/3.%20AfterAddingTheGameController.jpg)<br><br>
+4. After applying Open/Close and Dependency Inversion principles<br><br>
+a) Controllers-Boards-Initializers<br>
+![alt tag](https://github.com/skgchn/conways-game-of-life-oop-solid/blob/master/classdiagrams/4.%20OpenCloseDepencyInversionControllerBoardInitializersRelationship.jpeg)<br><br>
+b) Controllers-Boards-Persisters<br>
+![alt tag](https://github.com/skgchn/conways-game-of-life-oop-solid/blob/master/classdiagrams/5.%20OpenCloseDepencyInversionControllerBoardPersistersRelationship.jpeg)<br><br>
+c) Controllers-Boards-Renderers<br>
+![alt tag](https://github.com/skgchn/conways-game-of-life-oop-solid/blob/master/classdiagrams/6.%20OpenCloseDepencyInversionControllerBoardRenderersRelationship.jpg)<br><br>
