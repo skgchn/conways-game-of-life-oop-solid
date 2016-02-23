@@ -4,7 +4,7 @@ spl_autoload_register(function ($class) {
     require_once 'classes/' . $class . '.php';
 });
 
-if (empty($options = getopt("r:c:n:t::i::")) || empty($options['r']) || empty($options['c']) || empty($options['n'])) {
+if (empty($options = getopt("r:c:n:t::i::")) || empty($options['r']) || empty($options['c']) || !isset($options['n'])) {
     echo "Usage: php ";
     echo basename(__FILE__);
     echo " -r<num_rows> -c<num_cols> -n<num_steps> [-t<board_type>] [-i<board_initializer>\n\n";
