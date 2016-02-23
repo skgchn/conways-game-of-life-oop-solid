@@ -54,6 +54,5 @@ c) Controllers-Boards-Renderers<br>
 5. May add GameAdvancer class, to allow variation in game of life rules without violating Open/Close principle.<br>
 6. Reduce memory footstamp by passing around classnames of renderers, persistors, etc. and instantiating them only when using them<br>
 7. Use gif images to show deaths and aging in each step. Survivors need to have grey hairs and not be jumping around.<br>
-8. Do class diagram and add jpg here.<br>
-9. Implement a class or a method so as to not access superglobal $_GET directly.<br>
-10. Unit tests!<br>
+8. Implement a class or a method so as to not access superglobal $_GET directly.<br>
+9. Unit tests!<br>
