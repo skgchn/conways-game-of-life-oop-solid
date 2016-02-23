@@ -3,7 +3,7 @@ S - Single Responsibility Principle - Build classes to do only one thing<br>
 O - Open/Close Principle - Open for extension, but closed for modification<br>
 L - Liskov's Substitution Principle - Specialized classes (sub-classes) can be used wherever generalized (parents) classes are being used<br>
 I - Interface Segregation Principle - Classes be able to implement all methods in an interface<br>
-D - Dependency Inversion Principle - Higher level classes should not directly use lower level classes. Lower level class should implement an interface. Higher level class should program to the interface, i.e. expect any object implementing an interface be given to it.<br><br>
+D - Dependency Inversion Principle - Higher level classes should not directly use lower level classes. Lower level class should implement an interface. Higher level class should program to the interface, i.e. expect any object implementing an interface be given to it.<br>
 
 <b>Setup instructions</b><br>
 
