@@ -49,9 +49,9 @@ c) Controllers-Boards-Renderers<br>
 
 1. Implement run() method in HTMLGameController and ConsoleGameController to remove much code from index.php and golcli.php<br>
 2. Use a factory pattern to run both the web and console apps from same initial file gol.php, not requiring separate files for each, that is not requiring index.php or golcli.php<br>
-3. Add HTML, header, body tags, etc. in HTMLBoardRenderer...currently missing.<br>
+3. Add HTML, header, body tags, etc. in HTMLGameRenderer...currently missing.<br>
 4. Move js and css into separate javascript and css files respectively.<br>
-5. May add GameAdvancerClass, to allow variation in game of life rules without violating Open/Close principle.<br>
+5. May add GameAdvancer class, to allow variation in game of life rules without violating Open/Close principle.<br>
 6. Reduce memory footstamp by passing around classnames of renderers, persistors, etc. and instantiating them only when using them<br>
 7. Use gif images to show deaths and aging in each step. Survivors need to have grey hairs and not be jumping around.<br>
 8. Do class diagram and add jpg here.<br>
