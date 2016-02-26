@@ -56,4 +56,5 @@ c) Controllers-Boards-Renderers<br>
 7. Reduce memory footstamp by passing around classnames of renderers, persistors, etc. and instantiating them only when using them<br>
 8. Use gif images to show deaths and aging in each step. Survivors need to have grey hairs and not be jumping around.<br>
 9. Implement a class or a method so as to not access superglobal $_GET directly.<br>
-10. Unit tests!<br>
+10. Add unit tests!<br>
+11. Implement MySQLBoardPersister
