@@ -57,4 +57,5 @@ c) Controllers-Boards-Renderers<br>
 8. Use gif images to show deaths and aging in each step. Survivors need to have grey hairs and not be jumping around.<br>
 9. Implement a class or a method so as to not access superglobal $_GET directly.<br>
 10. Add unit tests!<br>
-11. Implement MySQLBoardPersister
+11. Implement MySQLBoardPersister<br>
+12. Give user the ability to create the initial configuration.<br>
