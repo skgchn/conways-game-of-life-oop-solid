@@ -44,18 +44,18 @@ b) Controllers-Boards-Persisters<br>
 ![alt tag](https://github.com/skgchn/conways-game-of-life-oop-solid/blob/master/classdiagrams/5.%20OpenCloseDepencyInversionControllerBoardPersistersRelationship.jpeg)<br><br>
 c) Controllers-Boards-Renderers<br>
 ![alt tag](https://github.com/skgchn/conways-game-of-life-oop-solid/blob/master/classdiagrams/6.%20OpenCloseDepencyInversionControllerBoardRenderersRelationship.jpg)<br><br>
+4. With a little code refactoring (27/03/2016), I was able to take the game advancement logic out of the Board class into its own class <b>LegacyGameAdvancer</b>, which implements the new <b>GameAdvancer</b> interface. Now it is possible to just implement GameAdvancer interface in a new class to modify the game rules.<br><br>
 
 <b>Yet to do</b><br>
 
 1. Implement run() method in HTMLGameController and ConsoleGameController to remove much code from index.php and golcli.php<br>
-2. Use a factory pattern to run both the web and console apps from same initial file gol.php, not requiring separate files for each, that is not requiring index.php or golcli.php<br>
+2. Use a factory pattern to run both the web and console apps from same initial file index.php, not requiring separate files for each, that is not requiring both index.php and golcli.php<br>
 3. Add HTML, header, body tags, etc. in HTMLGameRenderer...currently missing.<br>
 4. Move js and css into separate javascript and css files respectively.<br>
-5. May add GameAdvancer class, to allow variation in game of life rules without violating Open/Close principle.<br>
-6. In HTML UI add ability to specify board type and board initializer apart from the width and height when starting a new game.<br>
-7. Reduce memory footstamp by passing around classnames of renderers, persistors, etc. and instantiating them only when using them<br>
-8. Use gif images to show deaths and aging in each step. Survivors need to have grey hairs and not be jumping around.<br>
-9. Implement a class or a method so as to not access superglobal $_GET directly.<br>
-10. Add unit tests!<br>
-11. Implement MySQLBoardPersister<br>
-12. Give user the ability to create the initial configuration.<br>
+5. In HTML UI add ability to specify board type and board initializer apart from the width and height when starting a new game.<br>
+6. Reduce memory footstamp by passing around classnames of renderers, persistors, etc. and instantiating them only when using them<br>
+7. Use gif images to show deaths and aging in each step. Survivors need to have grey hairs and not be jumping around.<br>
+8. Implement a class or a method so as to not access superglobal $_GET directly.<br>
+9. Add unit tests!<br>
+10. Implement MySQLBoardPersister<br>
+11. Give user the ability to create the initial configuration.<br>
