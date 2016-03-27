@@ -23,8 +23,9 @@ $ vagrant provision<br>
 <b>Running Conway's Game of Life from the command line</b><br>
 $ vagrant ssh<br>
 $ cd /var/www/gameoflife<br>
-$ php golcli.php   # Shows command usage<br>
-$ php golcli.php -r 3 -c 3 -n 1<br>
+$ php golcli.php   # Shows last saved game state<br>
+$ php golcli.php -n -r 3 -c 3     # Start a new game<br>
+$ php golcli.php -a    # Advance game<br>
 
 
 <b>Running from web</b><br>
