@@ -1,35 +1,26 @@
 <?php
 
 class HTMLGameController extends GameController {
-    public function __construct($boardType, BoardInitializer $boardInitializer, BoardPersister $boardPersister, GameAdvancer $gameAdvancer) {
+
+    public function __construct() {
         $gameRenderer = new HTMLGameRenderer();
         $boardRenderer = new HTMLBoardRenderer();
-        $cellRenderer = new HTMLCellRenderer();       
-        parent::__construct($boardType, $gameRenderer, $boardRenderer, $cellRenderer, $boardInitializer, $boardPersister, $gameAdvancer);
+        $cellRenderer = new HTMLCellRenderer();
+        parent::__construct($gameRenderer, $boardRenderer, $cellRenderer);
     }
-    
-    public function newGame(BoardDimension $dimension) {
-        parent::newGame($dimension);
-            $this->persistGame();
-    }
-    
-    public function advanceGame() {
-        parent::advanceGame();
-        $this->persistGame();
-    }
-    
-    public function renderGame() {
-        parent::renderGame();
-    }
-    
-    public function loadGame() {
-        if (empty(parent::loadGame())) {
-            return false;
-        }
-        return true;
-    }
-    
+
     public function run() {
-        
+        //print_r($_GET);
+        if ((!empty($_GET['q'])) && ($_GET['q'] == 'newgame')) {
+            $this->newGame(new BoardDimension($_GET['r'], $_GET['c']));
+        } else {
+            if (!$this->loadGame()) {
+                $this->newGame(new BoardDimension(5, 5)); // Should instead inform user to start a new game
+            } else if ((!empty($_GET['q'])) && ($_GET['q'] == 'advance')) {
+                $this->advanceGame();
+            } else {
+                $this->renderGame();
+            }
+        }
     }
 }
