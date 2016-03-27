@@ -48,14 +48,13 @@ c) Controllers-Boards-Renderers<br>
 
 <b>Yet to do</b><br>
 
-1. Implement run() method in HTMLGameController and ConsoleGameController to remove much code from index.php and golcli.php<br>
-2. Use a factory pattern to run both the web and console apps from same initial file index.php, not requiring separate files for each, that is not requiring both index.php and golcli.php<br>
-3. Add HTML, header, body tags, etc. in HTMLGameRenderer...currently missing.<br>
-4. Move js and css into separate javascript and css files respectively.<br>
-5. In HTML UI add ability to specify board type and board initializer apart from the width and height when starting a new game.<br>
-6. Reduce memory footstamp by passing around classnames of renderers, persistors, etc. and instantiating them only when using them<br>
-7. Use gif images to show deaths and aging in each step. Survivors need to have grey hairs and not be jumping around.<br>
-8. Implement a class or a method so as to not access superglobal $_GET directly.<br>
-9. Add unit tests!<br>
-10. Implement MySQLBoardPersister<br>
-11. Give user the ability to create the initial configuration.<br>
+1. Use a factory pattern to run both the web and console apps from same initial file index.php, not requiring separate files for each, that is not requiring both index.php and golcli.php<br>
+2. Add HTML, header, body tags, etc. in HTMLGameRenderer...currently missing.<br>
+3. Move js and css into separate javascript and css files respectively.<br>
+4. In both Console and Web UI, add ability to specify board type and board initializer apart from the width and height when starting a new game.<br>
+5. Reduce memory footprint by passing around classnames of renderers, persistors, etc. and instantiating them only when using them<br>
+6. Use gif images to show deaths and aging in each step. Survivors need to have grey hairs and not be jumping around.<br>
+7. Implement a class or a method so as to not access superglobal $_GET directly.<br>
+8. Add unit tests!<br>
+9. Implement MySQLBoardPersister<br>
+10. Give user the ability to create the initial configuration.<br>
