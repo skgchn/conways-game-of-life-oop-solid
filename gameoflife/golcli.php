@@ -4,10 +4,11 @@ spl_autoload_register(function ($class) {
     require_once 'classes/' . $class . '.php';
 });
 
-if (empty($options = getopt("r:c:n:t::i::")) || empty($options['r']) || empty($options['c']) || !isset($options['n'])) {
+if (empty($options = getopt("r:c:n:t::i::a::")) || empty($options['r']) ||
+                              empty($options['c']) || !isset($options['n'])) {
     echo "Usage: php ";
     echo basename(__FILE__);
-    echo " -r<num_rows> -c<num_cols> -n<num_steps> [-t<board_type>] [-i<board_initializer>\n\n";
+    echo " -r<num_rows> -c<num_cols> -n<num_steps> [-t<board_type>] [-i<board_initializer>] [-a<game_advancer>]\n\n";
     exit();
 }
 //print_r($options);
@@ -15,8 +16,9 @@ $numSteps = $options['n'];
 $boardType = empty($options['t'])? 'BoundedBoard' : $options['t'];
 $boardInitializer = empty($options['i'])? new RandomBoardInitializer() : new $options['i']();
 $boardPersister = new FileBoardPersister();
+$gameAdvancer = empty($options['a'])? new LegacyGameAdvancer() : new $options['a']();
 
-$gameController = new ConsoleGameController($boardType, $boardInitializer, $boardPersister);
+$gameController = new ConsoleGameController($boardType, $boardInitializer, $boardPersister, $gameAdvancer);
 
 $gameController->newGame(new BoardDimension($options['r'], $options['c']));
 

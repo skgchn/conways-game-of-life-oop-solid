@@ -1,18 +1,8 @@
 <?php
 
 abstract class Board {
-    protected $dimension;
-    protected $activeCells;
-    protected $neighbourOffsets = [
-        [-1, -1], 
-        [-1,  0],
-        [-1,  1],
-        [ 0,  1],
-        [ 1,  1],
-        [ 1,  0],
-        [ 1, -1],
-        [ 0, -1]
-    ];
+    private $dimension;
+    private $activeCells;
 
     public function __construct(BoardDimension $dimension) {
         $this->dimension = $dimension;
@@ -33,6 +23,4 @@ abstract class Board {
         
         return false;
     }
-    
-    public abstract function numNeighboursOfCell(CellLocation $loc);
 }

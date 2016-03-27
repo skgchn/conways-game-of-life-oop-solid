@@ -4,11 +4,12 @@ spl_autoload_register(function ($class) {
     require_once 'classes/' . $class . '.php';
 });
 
-$boardType = 'BoundedBoard';
+$boardType = 'EdgesWrappedBoard';
 $boardInitializer = new RandomBoardInitializer();
 $boardPersister = new FileBoardPersister();
+$gameAdvancer = new LegacyGameAdvancer();
 
-$gameController = new HTMLGameController($boardType, $boardInitializer, $boardPersister);
+$gameController = new HTMLGameController($boardType, $boardInitializer, $boardPersister, $gameAdvancer);
 
 if (!$gameController->loadGame()) {
     $newBoardDimension = new BoardDimension(5, 5);

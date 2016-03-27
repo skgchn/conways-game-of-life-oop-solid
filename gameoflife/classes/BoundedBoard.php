@@ -1,24 +1,17 @@
 <?php
 
 class BoundedBoard extends Board {
-   public function numNeighboursOfCell(CellLocation $loc) {
+    public function isActiveCell(CellLocation $loc) {
         $row = $loc->getRow();
-        $col = $loc->getColumn();
-        //echo "cellloc = $row, $col\n";
-        $numRows = $this->dimension->getNumRows();
-        $numCols = $this->dimension->getNumCols();
-        $numNeighbours = 0;
-        foreach ($this->neighbourOffsets as $offset) {
-            $neighbourRow = $row + $offset[0];
-            $neighbourCol = $col + $offset[1];
-            //echo "neighbour = $neighbourRow, $neighbourCol\n";
-            if ($neighbourRow < $numRows && $neighbourCol < $numCols &&
-                    $neighbourRow >= 0 && $neighbourCol >= 0 &&
-                        !empty($this->activeCells[$neighbourRow][$neighbourCol])) {
-                $numNeighbours += 1;
-            }
+        $col = $loc->getColumn();       
+        $dimension = $this->getDimension();
+        $numRows = $dimension->getNumRows();
+        $numCols = $dimension->getNumCols();
+        
+        if ($row < 0 || $col < 0 || $row >= $numRows || $col >= $numCols) {
+            return false;
         }
         
-        return $numNeighbours;
+        return parent::isActiveCell($loc);
     }
 }

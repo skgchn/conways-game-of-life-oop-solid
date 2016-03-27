@@ -1,11 +1,11 @@
 <?php
 
 class ConsoleGameController extends GameController {
-    public function __construct($boardType, BoardInitializer $boardInitializer, BoardPersister $boardPersister) {
+    public function __construct($boardType, BoardInitializer $boardInitializer, BoardPersister $boardPersister, GameAdvancer $gameAdvancer) {
         $gameRenderer = new ConsoleGameRenderer();
         $boardRenderer = new ConsoleBoardRenderer();
-        $cellRenderer = new ConsoleCellRenderer();        
-        parent::__construct($boardType, $gameRenderer, $boardRenderer, $cellRenderer, $boardInitializer, $boardPersister);
+        $cellRenderer = new ConsoleCellRenderer();
+        parent::__construct($boardType, $gameRenderer, $boardRenderer, $cellRenderer, $boardInitializer, $boardPersister, $gameAdvancer);
     }
     
     public function newGame(BoardDimension $dimension) {
