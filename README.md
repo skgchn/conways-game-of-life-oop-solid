@@ -45,7 +45,7 @@ b) Controllers-Boards-Persisters<br>
 ![alt tag](https://github.com/skgchn/conways-game-of-life-oop-solid/blob/master/classdiagrams/5.%20OpenCloseDepencyInversionControllerBoardPersistersRelationship.jpeg)<br><br>
 c) Controllers-Boards-Renderers<br>
 ![alt tag](https://github.com/skgchn/conways-game-of-life-oop-solid/blob/master/classdiagrams/6.%20OpenCloseDepencyInversionControllerBoardRenderersRelationship.jpg)<br><br>
-5. With a little code refactoring (27/03/2016), I was able to take the game advancement logic out of the Board class into its own class <b>LegacyGameAdvancer</b>, which implements the new <b>GameAdvancer</b> interface. Now it is possible to just implement GameAdvancer interface in a new class to modify the game rules.<br><br>
+5. With a little code refactoring (27/03/2016), I was able to take the game advancement logic out of the Board and GameController classes into its own class <b>LegacyGameAdvancer</b>, which implements the new <b>GameAdvancer</b> interface. This now makes it possible to modify the game's rules by writing a new class which implements GameAdvancer interface.<br><br>
 
 <b>Yet to do</b><br>
 
