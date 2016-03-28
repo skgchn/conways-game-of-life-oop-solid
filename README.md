@@ -52,9 +52,9 @@ c) Controllers-Boards-Renderers<br>
 1. Implement a class or a method so as to not access superglobal $_GET directly.<br>
 2. Add HTML, header, body tags, etc. in HTMLGameRenderer...currently missing.<br>
 3. Move js and css into separate javascript and css files respectively.<br>
-4. Add unit tests<br>
-5. Use a factory pattern to run both the web and console apps from same initial file index.php, not requiring separate files for each, that is not requiring both index.php and golcli.php<br>
-6. Reduce memory footprint by passing around classnames of renderers, persistors, etc. and instantiating them only when using them<br>
+4. Add unit tests.<br>
+5. Use a factory pattern to run both the web and console apps from the same initial php script, not requiring separate initial php script for each, that is not requiring two separate scripts, index.php for web and golcli.php for console.<br>
+6. Reduce memory footprint by passing around classnames of renderers, persistors, etc. and instantiating them only when using them.<br>
 7. In both Console and Web UI, add ability to specify board type and board initializer apart from the width and height when starting a new game.<br>
 8. Give user the ability to create the initial configuration.<br>
 9. Implement MySQLBoardPersister<br>
