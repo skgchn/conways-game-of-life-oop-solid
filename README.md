@@ -18,7 +18,7 @@ $ rm puphpet/files/dot/ssh/id_rsa    # To be done for resolving error when runni
 $ vagrant provision<br>
 
 <b>Hosts file entry</b><br>
-192.168.56.120 gameoflife.dev www.gameoflife.dev
+192.168.56.120  gameoflife.test www.gameoflife.test
 
 <b>Running Conway's Game of Life from the command line</b><br>
 $ vagrant ssh<br>
@@ -29,7 +29,7 @@ $ php golcli.php -a    # Advance game<br>
 
 
 <b>Running from web</b><br>
-Visit <b>gameofline.dev</b> or <b>www.gameoflife.dev</b> in your browser<br>
+Visit <b>gameofline.test</b> or <b>www.gameoflife.test</b> in your browser<br>
 
 <b>OOP Design Progression</b><br>
 1. Initial Thought<br>

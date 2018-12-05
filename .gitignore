@@ -2,8 +2,10 @@ puphpet/config-custom.yaml
 .gitattributes.ignore
 .vagrant
 nbproject
-puphpet.zip
-puphpet/files/dot/ssh/id_rsa
-puphpet/files/dot/ssh/id_rsa.pub
 gameoflife/data/gol.txt
 classdiagrams/png
+ubuntu-bionic-18.04-cloudimg-console.log
+html
+.project
+.buildpath
+.settings
